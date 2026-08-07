@@ -1,0 +1,8 @@
+{
+  "name": "Remix AgentHub AI",
+  "description": "The Infrastructure for the AI Agent Economy with x402 payment protocol and Algorand blockchain verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
