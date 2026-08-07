@@ -1,0 +1,125 @@
+import { Agent } from '../types';
+
+export const INITIAL_AGENTS: Agent[] = [
+  {
+    id: 'resume-analyzer',
+    name: 'Resume Analyzer AI',
+    description: 'Upload or paste a resume to receive instant candidate grading, skill breakdown, gap analysis, and ATS optimization suggestions.',
+    category: 'NLP & Content',
+    priceAlgo: 0.005,
+    priceInr: 499,
+    rating: 4.9,
+    reviewCount: 328,
+    developer: 'AlgoTalent Core',
+    developerAddress: 'ALGO-DEV-98X2K4M1N8P3Q5R7S9T0',
+    logo: 'FileText',
+    tags: ['HR', 'ATS', 'Resume', 'Career', 'NLP'],
+    endpoint: '/api/agent/run',
+    appId: 10948293,
+    reputationScore: 98,
+    featured: true,
+    systemPrompt: `You are an expert ATS Resume Analyzer and Executive Recruiter. Analyze the candidate's resume or experience summary. Provide:
+1. Executive Assessment & Match Score (0-100%)
+2. Key Strengths & Technical Highlights
+3. Identified Skill Gaps or Formatting Deficiencies
+4. Actionable ATS Optimization Checklist`
+  },
+  {
+    id: 'ocr-extractor',
+    name: 'OCR Vision Extractor',
+    description: 'Extract structured text, receipts, table data, and key-value fields from images and documents with ultra-high precision.',
+    category: 'Vision & OCR',
+    priceAlgo: 0.008,
+    priceInr: 799,
+    rating: 4.8,
+    reviewCount: 215,
+    developer: 'VisionLab Algorand',
+    developerAddress: 'ALGO-VISION-33X1K9L2M5N7P9',
+    logo: 'ScanText',
+    tags: ['OCR', 'Document AI', 'Receipts', 'Vision'],
+    endpoint: '/api/agent/run',
+    appId: 10948301,
+    reputationScore: 96,
+    featured: true,
+    systemPrompt: `You are an advanced OCR & Document Processing AI. Extract and structure all readable text from the provided content. Format as clean Markdown tables and key-value pairs.`
+  },
+  {
+    id: 'code-reviewer',
+    name: 'Code Reviewer Pro',
+    description: 'Static security audit, performance optimization hints, refactoring suggestions, and bug detection for TypeScript, Rust, Python, and PyTeal.',
+    category: 'Code & Dev',
+    priceAlgo: 0.01,
+    priceInr: 1200,
+    rating: 4.95,
+    reviewCount: 540,
+    developer: 'DevX Algorand Guild',
+    developerAddress: 'ALGO-CODE-77Y4K2M8P1N3Q6',
+    logo: 'Code2',
+    tags: ['Security', 'Refactoring', 'PyTeal', 'Smart Contracts', 'Audit'],
+    endpoint: '/api/agent/run',
+    appId: 10948310,
+    reputationScore: 99,
+    featured: true,
+    systemPrompt: `You are a Senior Principal Software Architect and Security Auditor specializing in Web3 & Distributed Systems. Analyze the submitted code and provide:
+1. Security Risk Audit (Reentrancy, overflow, missing validation)
+2. Time/Space Complexity & Performance Hints
+3. Idiomatic Code Refactoring Suggestions`
+  },
+  {
+    id: 'translator-ai',
+    name: 'Polyglot Neural Translator',
+    description: 'Nuanced multi-language contextual translation maintaining technical terminology, tone, and domain accuracy across 50+ languages.',
+    category: 'Translation',
+    priceAlgo: 0.003,
+    priceInr: 250,
+    rating: 4.75,
+    reviewCount: 189,
+    developer: 'LinguaNet Protocol',
+    developerAddress: 'ALGO-LINGUA-55Z2X9M3N1P4',
+    logo: 'Languages',
+    tags: ['Translation', 'Localization', 'Polyglot', 'NLP'],
+    endpoint: '/api/agent/run',
+    appId: 10948318,
+    reputationScore: 94,
+    featured: true,
+    systemPrompt: `You are a professional Neural Polyglot Translator. Translate the given text accurately into the requested or identified target language, preserving technical context, nuance, and natural cadence.`
+  },
+  {
+    id: 'readme-summarizer',
+    name: 'README GitHub Summarizer',
+    description: 'Transform complex GitHub repositories and open-source documentation into concise executive summaries, installation guides, and API specs.',
+    category: 'Productivity',
+    priceAlgo: 0.004,
+    priceInr: 399,
+    rating: 4.88,
+    reviewCount: 412,
+    developer: 'OpenSource Foundation',
+    developerAddress: 'ALGO-GITHUB-11A9K8L3M2N5',
+    logo: 'BookOpenCheck',
+    tags: ['GitHub', 'Docs', 'Summarization', 'Productivity'],
+    endpoint: '/api/agent/run',
+    appId: 10948325,
+    reputationScore: 97,
+    featured: true,
+    systemPrompt: `You are a Tech Lead & Open-Source Curator. Summarize the provided README file or repository documentation. Highlight key features, architecture, installation steps, and API entry points.`
+  },
+  {
+    id: 'algorand-contract-analyzer',
+    name: 'AlgoContract Auditor',
+    description: 'Audit Algorand Smart Contracts (PyTeal / TEAL / Algorand Python) for security flaws, state storage optimization, and fee efficiency.',
+    category: 'Code & Dev',
+    priceAlgo: 0.015,
+    priceInr: 2000,
+    rating: 4.98,
+    reviewCount: 164,
+    developer: 'Borderless Security',
+    developerAddress: 'ALGO-AUDIT-99K2M4N6P8Q0',
+    logo: 'ShieldCheck',
+    tags: ['Algorand', 'PyTeal', 'TEAL', 'Smart Contract', 'Audit'],
+    endpoint: '/api/agent/run',
+    appId: 10948340,
+    reputationScore: 100,
+    featured: false,
+    systemPrompt: `You are a world-class Algorand Smart Contract Auditor. Analyze the PyTeal or TEAL contract code for state schema limits, group transaction validation, rekeying safety, and inner transaction bounds.`
+  }
+];
