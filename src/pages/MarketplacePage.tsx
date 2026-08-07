@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Agent, X402Challenge } from '../types';
 import { getAgents, runAgent } from '../services/api';
+import { INITIAL_AGENTS } from '../data/mockAgents';
 import { AgentCard } from '../components/marketplace/AgentCard';
 import { CategoryFilter } from '../components/marketplace/CategoryFilter';
 import { SearchBar } from '../components/marketplace/SearchBar';
@@ -29,7 +30,7 @@ export const MarketplacePage: React.FC = () => {
   useEffect(() => {
     async function loadAgents() {
       const data = await getAgents();
-      setAgents(data);
+      setAgents(data && data.length > 0 ? data : INITIAL_AGENTS);
       setLoading(false);
     }
     loadAgents();
